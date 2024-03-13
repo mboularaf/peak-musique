@@ -75,8 +75,16 @@ export default {//fonction pour créer le tableau, faire changer la musique, met
       lecteur: new Audio()
     }
   },
+  /**
+   * Les différentes méthodes utilisées dans la classe app
+   * 
+   */
    methods:{
-    play(musique){ //fonction pour commencer la musique
+    /**
+    * Fonction pour commencer la musique
+    * 
+    */
+    play(musique){ 
        // Arrêter la musique en cours s'il y en a une
       if (this.lecteur) {
         this.lecteur.pause();
@@ -87,7 +95,7 @@ export default {//fonction pour créer le tableau, faire changer la musique, met
       this.lecteur = new Audio(this.actuel.src);
       //console.log(this.lecteur);
       this.lecteur.play();
-      this.lecteur.addEventListener('ended',function (){ //quand la chanson s'arreter peut relancer de nouveau la chanson
+      this.lecteur.addEventListener('ended',function (){ //quand la chanson s'arrêter peut relancer de nouveau la chanson
         this.index++;
         if(this.index > this.musiques.length - 1){
         this.index = 0;
@@ -98,7 +106,11 @@ export default {//fonction pour créer le tableau, faire changer la musique, met
       }.bind(this));
       this.joue =true;
     },
-    pause () {// fonction pour arreter la musique
+    /**
+     * Fonction pour arrêter la musique
+     * 
+     */
+    pause () {
       this.lecteur.pause();
       this.joue = false;
     },
@@ -119,7 +131,11 @@ export default {//fonction pour créer le tableau, faire changer la musique, met
       this.play(this.actuel);
     }
   },
-  created () { // fonction pour créer un nouveau componant 
+  /**
+   * fonction pour créer un nouveau componant
+   * 
+   */
+  created () {  
     this.actuel =this.musiques[this.index]; //definir la première musique dans mon tableau musiques
     //this.lecteur.src = this.actuel.src;//definition de la source de lecteur en utilisant la source de la musique joué
     //this.lecteur.play();
