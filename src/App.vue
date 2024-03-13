@@ -139,7 +139,6 @@ export default {//fonction pour créer le tableau, faire changer la musique, met
     this.actuel =this.musiques[this.index]; //definir la première musique dans mon tableau musiques
     //this.lecteur.src = this.actuel.src;//definition de la source de lecteur en utilisant la source de la musique joué
     //this.lecteur.play();
-    console.log(this.musiques[this.index]['image']);
   }
 }
 
