@@ -49,26 +49,26 @@ export default {//fonction pour créer le tableau, faire changer la musique, met
         {
           titre:'P.Y.T',
           artiste: 'Michael Jackson',
-          src: '/assets/musics/michael-jackson*pyt.mp3',
-          image:'/assets/photos/mj.jpeg'
+          src: '/src/assets/musics/michael-jackson*pyt.mp3',
+          image:'/src/assets/photos/mj.jpeg'
         },
         {
           titre:'Popular',
           artiste: 'The Weeknd',
-          src: '/assets/musics/the-weeknd*popular.mp3',
-          image:'/assets/photos/weeknd.jpeg'
+          src: '/src/assets/musics/the-weeknd*popular.mp3',
+          image:'/src/assets/photos/weeknd.jpeg'
         },
         {
           titre:'Le temps',
           artiste: 'Tayc',
-          src: '/assets/musics/tayc*le-temps.mp3',
-          image:'/assets/photos/tayc.jpeg'
+          src: '/src/assets/musics/tayc*le-temps.mp3',
+          image:'/src/assets/photos/tayc.jpeg'
         },
         {
           titre:'Bring Me To Life',
           artiste: 'Evanescence',
-          src: '/assets/musics/evanescence*bring-me-to-life.mp3',
-          image:'/assets/photos/evanescence.jpeg'
+          src: '/src/assets/musics/evanescence*bring-me-to-life.mp3',
+          image:'/src/assets/photos/evanescence.jpeg'
         }
         
       ],
